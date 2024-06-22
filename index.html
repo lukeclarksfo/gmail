@@ -16,16 +16,24 @@
             width: 100px;
             height:100vh;
         }
+        .sidebar-item
+        {
+            padding: 10px;
+        }
         #folders
         {
+        }
+        #compose
+        {
+            background: rgb(194,232,253);
             padding: 10px;
         }
     </style>
 </head>
 <body>
   <div id="sidebar">
-  <div>Compose</div>
-  <div id="folders">
+  <div class="sidebar-item"><div id="compose">Compose</div></div>
+  <div id="folders" class="sidebar-item">
   <div>Inbox</div>
   <div>Starred</div>
   <div>Snoozed</div>
