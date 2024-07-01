@@ -1,3 +1,5 @@
-Design of Gmail
+## Design of Gmail
 
-[lukeclarksfo.github.io/gmail/](https://lukeclarksfo.github.io/gmail/)
+Click the link for the project.
+
+[Gmail](https://lukeclarksfo.github.io/gmail/)
