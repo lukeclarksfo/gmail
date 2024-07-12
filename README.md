@@ -1,4 +1,4 @@
-## Design of Gmail
+# Design of Gmail
 
 Click the link for the project.
 
