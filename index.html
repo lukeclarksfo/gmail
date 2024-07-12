@@ -8,13 +8,34 @@
 <style>
 body
 {
-    display: flex;
     margin: 0;
     font-family:sans-serif;
 }
+header
+{
+    background: rgb(4 60 129);
+    color: white;
+    display: flex;
+}
+header div, header p
+{
+    padding: 10px;
+}
+header:nth-of-type(2)
+{
+    flex-flow: column;
+}
+header p, header h2
+{
+    padding: 0 20px;
+}
+header h2
+{
+    font-weight: 550;
+}
 a 
 {
-    color: rgb(0,106,178);
+    color: white;
     font-weight: bold;
     text-decoration: none;
 }
@@ -22,49 +43,77 @@ a:hover
 {
   text-decoration: underline;
 }
+
 #sidebar
 {
     background: rgb(246,248,252);
     width: 200px;
     height:100vh;
-    padding: 20px;
 }
 .sidebar-item
 {
+}
+
+#compose
+{
+    background: rgb(194, 232, 253);
+    border: none;
+    margin: 20px 10px;
+    padding: 20px 30px;
+    width: 120px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+#compose:hover
+{
+    box-shadow: 0 0px 5px #000a;
 }
 #folders
 {
 
 }
-#folders > div
+#folders button
 {
-    padding: 10px;
+    background: none;
+    border: none;
+    padding: 10px 20px 10px 50px;
+    width: 100%;
+    display: flex;
+    border-radius: 0 20px 20px 0;
 }
-#compose
+#folders button:hover
 {
-    background: rgb(194,232,253);
-    padding: 10px;
-    width: 100px;
-    margin-bottom: 50px;
-    border-radius: 10px;
+    background: #eee;
 }
+
 </style>
 </head>
 <body>
-  <div id="sidebar">
-  <div class="sidebar-item"><div id="compose">Compose</div></div>
+    <header>
+        <div>Luke Clark</div>
+        <div>GitHub Profile</div>
+        <div><a href="https://github.com/lukeclarksfo/gmail">GitHub</a></div>
+    </header>
+    <header>
+        <h2>Gmail sidebar</h2>
+        <p>This is only a very small copy of the Gmail sidebar. The project is not actively developed. There is no functionality for any of the buttons.</p>
+    </header>
+    <main>
+  <aside id="sidebar">
+    <section class="sidebar-item">
+    <button id="compose">Compose</button>
+    </section>
   
-  <div class="sidebar-item" id="folders">
-  <div>Inbox</div>
-  <div>Starred</div>
-  <div>Snoozed</div>
-  <div>Sent</div>
-  <div>Drafts</div>
-  <div>More</div>
-  </div>
-      
-  </div>
+  <section class="sidebar-item" id="folders">
+    <div><button>Inbox</button></div>
+    <div><button>Starred</button></div>
+    <div><button>Snoozed</button></div>
+    <div><button>Sent</button></div>
+    <div><button>Drafts</button></div>
+    <div><button>More</button></div>
+  </section>     
+</aside>
+</main>
 
-  <div id="main"><p><a href="https://github.com/lukeclarksfo/gmail">GitHub</a></p></div>
 </body>
 </html>
