@@ -2,4 +2,4 @@
 
 Click the link for the project.
 
-[Gmail](https://lukeclarksfo.github.io/gmail/)
+[Website](https://lukeclarksfo.github.io/gmail/)
