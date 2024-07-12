@@ -86,6 +86,19 @@ a:hover
     background: #eee;
 }
 
+main
+{
+    display: flex;
+}
+main > section
+{
+    padding: 50px;
+}
+#folders div:nth-of-type(1) button,
+#folders div:nth-of-type(1) button:hover
+{
+    background: rgb(194, 232, 253);
+}
 </style>
 </head>
 <body>
@@ -96,7 +109,7 @@ a:hover
     </header>
     <header>
         <h2>Gmail sidebar</h2>
-        <p>This is only a very small copy of the Gmail sidebar. The project is not actively developed. There is no functionality for any of the buttons.</p>
+        <p>This is only a very small copy of the Gmail sidebar in HTML and CSS. The project is not actively developed. There is no JavaScript functionality for any of the buttons.</p>
     </header>
     <main>
   <aside id="sidebar">
@@ -113,6 +126,12 @@ a:hover
     <div><button>More</button></div>
   </section>     
 </aside>
+
+<section>
+    <p>Your Primary tab is empty.</p>
+    <p>Personal messages and messages that don't appear in other tabs will be shown here.</p>
+    <p>To add or remove tabs click inbox settings.</p>
+</section>
 </main>
 
 </body>
