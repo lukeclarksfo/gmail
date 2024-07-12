@@ -4,113 +4,21 @@
     <meta http-equiv="cache-control" content='no-cache'> 
     <meta http-equiv="expires" content='0'> 
     <meta http-equiv="pragma" content='no-cache'>
-    
-<style>
-body
-{
-    margin: 0;
-    font-family:sans-serif;
-}
-header
-{
-    background: rgb(4 60 129);
-    color: white;
-    display: flex;
-}
-header div, header p
-{
-    padding: 20px;
-}
-header:nth-of-type(2)
-{
-    flex-flow: column;
-}
-header p, header h2
-{
-    padding: 10px 100px;
-}
-header h2
-{
-    font-weight: 550;
-}
-a 
-{
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-}
-a:hover
-{
-  text-decoration: underline;
-}
 
-#sidebar
-{
-    background: rgb(246,248,252);
-    width: 200px;
-    height:100vh;
-}
-.sidebar-item
-{
-}
-
-#compose
-{
-    background: rgb(194, 232, 253);
-    border: none;
-    margin: 20px 10px;
-    padding: 20px 30px;
-    width: 120px;
-    margin-bottom: 50px;
-    border-radius: 10px;
-}
-#compose:hover
-{
-    box-shadow: 0 0px 5px #000a;
-}
-#folders
-{
-
-}
-#folders button
-{
-    background: none;
-    border: none;
-    padding: 10px 20px 10px 50px;
-    width: 100%;
-    display: flex;
-    border-radius: 0 20px 20px 0;
-}
-#folders button:hover
-{
-    background: #eee;
-}
-
-main
-{
-    display: flex;
-}
-main > section
-{
-    padding: 100px;
-}
-#folders div:nth-of-type(1) button,
-#folders div:nth-of-type(1) button:hover
-{
-    background: rgb(194, 232, 253);
-}
-</style>
+    <link rel="stylesheet" href="https://lukeclarksfo.github.io/header.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header id="cross-first-header">
         <div><a href="https://lukeclarksfo.github.io/">Luke Clark</a></div>
         <div><a href="https://github.com/lukeclarksfo">GitHub Profile</a></div>
         <div><a href="https://github.com/lukeclarksfo/gmail">GitHub</a></div>
     </header>
-    <header>
+    <header id="cross-second-header">
         <h2>Gmail sidebar</h2>
         <p>This is only a very small copy of the Gmail sidebar in HTML and CSS. The project is not actively developed. There is no JavaScript functionality for any of the buttons.</p>
     </header>
+    
     <main>
   <aside id="sidebar">
     <section class="sidebar-item">
